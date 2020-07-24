@@ -36,7 +36,7 @@ const CustomForm = () => {
             <form action="#">
                 <div className={classes.InputCont}>
                     <div className={classes.LabelCont}>
-                        <label for="" className={errorClass ? classes.ErrorEmailText : null}>Email:</label>
+                        <label htmlFor="" className={errorClass ? classes.ErrorEmailText : null}>Email:</label>
                     </div>
                     <div>
                         <input type="email" name="email" onChange={changeHandler} className={errorClass ? classes.ErrorClass : null} />
@@ -44,7 +44,7 @@ const CustomForm = () => {
                 </div>
                 <div className={classes.InputCont}>
                     <div className={classes.LabelCont}>
-                        <label for="">Password:</label>
+                        <label htmlFor="">Password:</label>
                     </div>
                     <div>
                         <input type="password" name="password" onChange={changeHandler} />
